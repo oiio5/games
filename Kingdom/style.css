@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+    font-family: 'Courier New', monospace;
+    color: #f4d03f;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.story-box {
+    flex: 1;
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    border: 2px solid #f4d03f;
+    border-radius: 10px;
+    overflow-y: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+}
+
+.battle-desc {
+    color: #f39c12;
+}
+.hp-info {
+    color: #00eaff;
+    font-weight: bold;
+}
+.battle-win {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+
+.status-bar {
+    background: rgba(0,0,0,0.9);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.choices-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 40px; /* 增加底部间距，防止贴底 */
+    margin-top: 10px;
+}
+
+.choices-box button {
+    background: linear-gradient(45deg, #f4d03f, #f39c12);
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #1a1a2e;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.choices-box button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 0;
+    z-index: 2;
+}
+
+.controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    .story-box { font-size: 16px; }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>失落的王国日记</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- 故事叙述区 -->
+        <div id="story" class="story-box"></div>
+        
+        <!-- 状态栏 -->
+        <div id="status" class="status-bar">
+            <span>HP: <span id="hp">100</span>/100</span>
+            <span>金币: <span id="gold">0</span></span>
+            <span>物品: <span id="items">无</span></span>
+            <span>等级: <span id="level">1</span></span>
+        </div>
+        
+        <!-- 选择按钮区 -->
+        <div id="choices" class="choices-box"></div>
+        
+        <!-- 控制按钮 -->
+        <div class="controls">
+            <button id="save">存档</button>
+            <button id="load">读档</button>
+            <button id="reset">重玩</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
